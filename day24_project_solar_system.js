@@ -465,3 +465,9 @@ button.addEventListener('click', () => {
 // 5. add spinned planet gifs ❌
 // 6. make planets bigger ✅
 // 7. code optimization ✅
+
+app.get('/pss/styles.css', (req, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    res.sendFile(path.join(__dirname, 'public', 'pss', 'styles.css'));
+  });
+  
