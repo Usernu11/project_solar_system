@@ -46,7 +46,7 @@ const styles = {
     },
     body: {
         margin: '0',
-        fontFamily: 'sans-serif',
+        fontFamily: 'Bruno Ace SC',
     },
     contentWrapper: {
         width: '60%',
@@ -131,7 +131,7 @@ const styles = {
         height: '120px',
         borderRadius: '50%',
         backgroundColor: 'rgba(180 , 180, 180 , .6)',
-        fontSize: '35px',
+        fontSize: '30px',
         color: 'white',
         display: 'flex',
         justifyContent: 'center',
@@ -465,9 +465,3 @@ button.addEventListener('click', () => {
 // 5. add spinned planet gifs ❌
 // 6. make planets bigger ✅
 // 7. code optimization ✅
-
-app.get('/pss/styles.css', (req, res) => {
-    res.setHeader('Content-Type', 'text/css');
-    res.sendFile(path.join(__dirname, 'public', 'pss', 'styles.css'));
-  });
-  
